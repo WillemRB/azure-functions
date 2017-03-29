@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "haloTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 50 5 * * *"
+    }
+  ],
+  "disabled": false
+}

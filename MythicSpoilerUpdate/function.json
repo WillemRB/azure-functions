@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "spoilerTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 8-21 * * *"
+    }
+  ],
+  "disabled": false
+}
