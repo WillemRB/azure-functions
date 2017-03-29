@@ -1,26 +1,26 @@
+var request = require('request');
 var sendwithus = require('sendwithus');
 var ironcache = require('iron-cache');
-var Zombie = require('zombie');
+var rp = require('request-promise');
+var cheerio = require('cheerio');
 
-var cache_name = 'magic-spoilers';
-var max_spoiled = 5;
+const base_url = 'https://www.mythicspoiler.com/';
+const cache_name = 'magic-spoilers';
+
 var client = ironcache.createClient();
 var already_spoiled_count = 0;
 var images = [];
+var _context;
 
 module.exports = function (context, spoilerTimer) {
     _context = context;
-    context.log('Starting...');
-
-    var browser = new Zombie();
-    browser.site = 'https://www.mythicspoiler.com/';
-    browser.visit('newspoilers.html', function() {
-        var imgTags = browser.queryAll('img')
-            
+    _request().then($ => {
+        const imgTags = $('img');
+        
         for (i = 0; i < imgTags.length; i++) {
-            var src = imgTags[i].src;
-            if (src.indexOf('/cards/') > 0) {
-                images[images.length] = src.replace(browser.site, "");
+            var src = imgTags[i].attribs['src'];
+            if (image.indexOf('/cards/') > 0) {
+                images[images.length] = src;
             }
         }
 
