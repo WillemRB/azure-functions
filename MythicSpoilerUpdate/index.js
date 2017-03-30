@@ -78,3 +78,14 @@ function processImages(images, new_cards, callback) {
         processImages(images, new_cards, callback);
     });
 }
+
+function _request() {
+    const _options = Object.assign({
+        uri: base_url + 'newspoilers.html',
+        transform: (body) => cheerio.load(body)
+    });
+
+    _context.log('request', _options);
+
+    return rp(_options);
+}
