@@ -7,12 +7,14 @@ var packtpub_url = 'https://www.packtpub.com';
 var freelearning_url = '/packt/offers/free-learning';
 
 var cookie_jar = request.jar();
+var _context = 0;
 
 module.exports = function (context, packtpubTimer) {
+    _context = context;
     _request(freelearning_url, 'get')
         .then($ => {
-            const $form = $('#packt-user-login-form');
-            const data = $form
+            var $form = $('#packt-user-login-form');
+            var data = $form
                 .serializeArray()
                 .reduce((prev, curr) => Object.assign(prev, { [curr.name]: curr.value }), {});
 
@@ -33,10 +35,10 @@ module.exports = function (context, packtpubTimer) {
         .then($ => {
             _request($('.free-ebook a.twelve-days-claim').attr('href'))
                 .then($ => {
-                    const $book = $('#product-account-list .product-line').first()
-                    const $cover = $book.find('.product-thumbnail img.imagecache-thumbview').first()
+                    var $book = $('#product-account-list .product-line').first()
+                    var $cover = $book.find('.product-thumbnail img.imagecache-thumbview').first()
 
-                    const data = {
+                    var data = {
                         title: $cover.attr('title'),
                         image: 'https:' + $cover.attr('src'),
                         pdf: $book.find('.fake-button[format="pdf"]').parent().attr('href'),
@@ -44,7 +46,8 @@ module.exports = function (context, packtpubTimer) {
                         date: ('0' + new Date().getDate()).slice(-2) + '-' + ('0' + (new Date().getMonth() + 1)).slice(-2) + '-' + new Date().getFullYear()
                     };
 
-                    const mailer = sendwithus(process.env['SENDWITHUS_API_KEY']);
+                    _context.log(data);
+                    var mailer = sendwithus(process.env['SENDWITHUS_API_KEY']);
 
                     mailer.send({
                         template: 'tem_zsQKxXGvK2Y33qfdQQpMW7',
@@ -64,7 +67,7 @@ function _request(uri, method, data, options) {
         uri = packtpub_url + uri;
     }
 
-    const _options = Object.assign({
+    var _options = Object.assign({
         uri,
         jar: cookie_jar,
         transform: (body) => cheerio.load(body)
@@ -75,15 +78,16 @@ function _request(uri, method, data, options) {
         _options.form = data;
     }
 
-    console.log('request', _options);
+    _context.log('request', _options);
 
     return rp(_options)
 }
 
 var sendwithus_callback = function (err, response) {
     if (err) {
-        console.log(err.statusCode, response);
+        _context.log(err.statusCode, response);
     } else {
-        console.log(response);
+        _context.log(response);
     }
+    _context.done();
 };
