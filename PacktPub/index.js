@@ -1,4 +1,3 @@
-var request = require('request');
 var cheerio = require('cheerio');
 var rp = require('request-promise');
 var sendwithus = require('sendwithus');
