@@ -7,7 +7,7 @@ var packtpub_url = 'https://www.packtpub.com';
 var freelearning_url = '/packt/offers/free-learning';
 
 var cookie_jar = request.jar();
-var _context = 0;
+var _context = null;
 
 module.exports = function (context, packtpubTimer) {
     _context = context;
