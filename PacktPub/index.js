@@ -1,6 +1,7 @@
 var cheerio = require('cheerio');
 var rp = require('request-promise');
 var sendwithus = require('sendwithus');
+var request = require('request');
 
 var packtpub_url = 'https://www.packtpub.com';
 var freelearning_url = '/packt/offers/free-learning';
