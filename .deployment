@@ -1,0 +1,6 @@
+[config]
+command = D:\home\site\repository\.deploy\deploy.cmd
+SCM_COMMAND_IDLE_TIMEOUT=900
+WEBPACK_OUTPUT_FILE = index.js
+DEPLOY_DIST_FOLDER = dist
+DEPLOY_EXCLUDE_FOLDERS = [".git", ".deploy", "node_modules", "dist"]
