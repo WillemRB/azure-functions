@@ -2,6 +2,7 @@
   "name": "azure-functions-wrb",
   "version": "1.0.0",
   "description": "Number of Azure Functions to perform recurring tasks",
+  "private": true,
   "dependencies": {
     "cheerio": "^0.22.0",
     "request": "^2.81.0",
