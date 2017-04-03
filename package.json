@@ -11,12 +11,6 @@
     "sendwithus": "^3.0.0",
     "iron-cache": "^0.3.0"
   },
-  "devDependencies": {
-    "webpack": "^2.2.1"
-  },
-  "scripts": {
-    "build": "webpack"
-  },
   "author": "Willem Bouma",
   "license": "MIT"
 }
