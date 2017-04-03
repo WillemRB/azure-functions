@@ -8,6 +8,6 @@
   }
  ],
  "disabled": false,
- "scriptFile": "../build/index.js",
+ "scriptFile": "../dist/index.js",
  "entryPoint": "PacktPub"
 }

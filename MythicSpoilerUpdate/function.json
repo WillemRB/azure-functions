@@ -8,6 +8,6 @@
   }
  ],
  "disabled": true,
- "scriptFile": "../build/index.js",
+ "scriptFile": "../dist/index.js",
  "entryPoint": "MythicSpoilerUpdate"
 }
