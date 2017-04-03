@@ -8,8 +8,6 @@
   }
  ],
  "disabled": false,
- "_originalEntryPoint": false,
- "_originalScriptFile": "index.js",
- "scriptFile": "../.funcpack/index.js",
+ "scriptFile": "../build/index.js",
  "entryPoint": "PacktPub"
 }
