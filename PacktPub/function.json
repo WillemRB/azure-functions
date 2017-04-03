@@ -1,11 +1,15 @@
 {
-  "bindings": [
-    {
-      "name": "packtpubTimer",
-      "type": "timerTrigger",
-      "direction": "in",
-      "schedule": "0 45 5 * * *"
-    }
-  ],
-  "disabled": false
+ "bindings": [
+  {
+   "name": "packtpubTimer",
+   "type": "timerTrigger",
+   "direction": "in",
+   "schedule": "0 45 5 * * *"
+  }
+ ],
+ "disabled": false,
+ "_originalEntryPoint": false,
+ "_originalScriptFile": "index.js",
+ "scriptFile": "../.funcpack/index.js",
+ "entryPoint": "PacktPub"
 }

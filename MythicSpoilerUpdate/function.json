@@ -1,11 +1,15 @@
 {
-  "bindings": [
-    {
-      "name": "spoilerTimer",
-      "type": "timerTrigger",
-      "direction": "in",
-      "schedule": "0 0 8-21 * * *"
-    }
-  ],
-  "disabled": false
+ "bindings": [
+  {
+   "name": "spoilerTimer",
+   "type": "timerTrigger",
+   "direction": "in",
+   "schedule": "0 0 8-21 * * *"
+  }
+ ],
+ "disabled": false,
+ "_originalEntryPoint": false,
+ "_originalScriptFile": "index.js",
+ "scriptFile": "../.funcpack/index.js",
+ "entryPoint": "MythicSpoilerUpdate"
 }
