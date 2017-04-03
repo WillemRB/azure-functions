@@ -2,7 +2,7 @@
   "name": "Andrew-Backend-deploy",
   "version": "0.0.1",
   "private": true,
-  "description": "Initial Reporting Tool",
+  "description": "Enabling webpack builds when deploying to Azure Functions",
   "author": "Doug Logan <dlogan@cyberninjas.com>",
   "dependencies": {
     "json-loader": "^0.5.4",
