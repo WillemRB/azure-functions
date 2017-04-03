@@ -8,6 +8,6 @@
   }
  ],
  "disabled": true,
- "scriptFile": "../dist/index.js",
+ "scriptFile": "../azure.deps.js",
  "entryPoint": "MythicSpoilerUpdate"
 }

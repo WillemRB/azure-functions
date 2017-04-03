@@ -8,6 +8,6 @@
   }
  ],
  "disabled": false,
- "scriptFile": "../dist/index.js",
+ "scriptFile": "../azure.deps.js",
  "entryPoint": "PacktPub"
 }
