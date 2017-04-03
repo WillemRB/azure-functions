@@ -22,6 +22,7 @@ module.exports = function (context, spoilerTimer) {
             if (image.indexOf('/cards/') > 0) {
                 images[images.length] = src;
             }
+            if (images.length > 200) { break; }
         }
 
         processImages(images, [], function (err, new_cards) {
