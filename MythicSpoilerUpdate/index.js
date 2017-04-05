@@ -1,4 +1,3 @@
-var request = require('request');
 var sendwithus = require('sendwithus');
 var ironcache = require('iron-cache');
 var rp = require('request-promise');
@@ -19,7 +18,7 @@ module.exports = function (context, spoilerTimer) {
         
         for (i = 0; i < imgTags.length; i++) {
             var src = imgTags[i].attribs['src'];
-            if (image.indexOf('/cards/') > 0) {
+            if (src.indexOf('/cards/') > 0) {
                 images[images.length] = src;
             }
             if (images.length > 200) { break; }
