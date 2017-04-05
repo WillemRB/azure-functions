@@ -7,7 +7,5 @@
    "schedule": "0 45 5 * * *"
   }
  ],
- "disabled": false,
- "scriptFile": "../azure.deps.js",
- "entryPoint": "PacktPub"
+ "disabled": false
 }

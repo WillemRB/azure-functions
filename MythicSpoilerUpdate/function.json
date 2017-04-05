@@ -7,7 +7,5 @@
    "schedule": "0 0 8-21 * * *"
   }
  ],
- "disabled": true,
- "scriptFile": "../azure.deps.js",
- "entryPoint": "MythicSpoilerUpdate"
+ "disabled": true
 }
