@@ -8,6 +8,7 @@ const cache_name = 'magic-spoilers';
 
 var client = ironcache.createClient();
 var already_spoiled_count = 0;
+var max_spoiled = 5;
 var images = [];
 var _context;
 
