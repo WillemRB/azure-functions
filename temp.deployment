@@ -1,6 +1,0 @@
-[config]
-command = D:\home\site\repository\.deploy\deploy.cmd
-SCM_COMMAND_IDLE_TIMEOUT=900
-WEBPACK_OUTPUT_FILE = azure.deps.js
-DEPLOY_DIST_FOLDER = dist
-DEPLOY_EXCLUDE_FOLDERS = [".git", ".deploy", "node_modules", "dist", "package.json", ".gitignore", "README.md", ".deployment"]
