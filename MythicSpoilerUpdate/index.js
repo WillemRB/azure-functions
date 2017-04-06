@@ -14,6 +14,8 @@ var _context;
 
 module.exports = function (context, spoilerTimer) {
     _context = context;
+    already_spoiled_count = 0;
+    images = [];
     _request().then($ => {
         const imgTags = $('img');
         
