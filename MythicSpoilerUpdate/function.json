@@ -4,7 +4,7 @@
    "name": "spoilerTimer",
    "type": "timerTrigger",
    "direction": "in",
-   "schedule": "0 0 8-21 * * *"
+   "schedule": "0 0 8,10,12,14,16,18,21 * * *"
   }
  ],
  "disabled": false
