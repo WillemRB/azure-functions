@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildFinishedFunction", "DevOpsFunctionApp\BuildFinishedFunction.csproj", "{F6E0FA5A-C602-4DE1-80FD-6B91AE8F58D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HaloGuardians", "HaloGuardians", "{4069EE8C-FAE8-49C5-8D70-832BFCF154AC}"
+	ProjectSection(SolutionItems) = preProject
+		HaloGuardians\function.json = HaloGuardians\function.json
+		HaloGuardians\index.js = HaloGuardians\index.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MythicSpoilerUpdate", "MythicSpoilerUpdate", "{ED3267C5-7415-4CA3-9AD7-C162F97D560C}"
+	ProjectSection(SolutionItems) = preProject
+		MythicSpoilerUpdate\function.json = MythicSpoilerUpdate\function.json
+		MythicSpoilerUpdate\index.js = MythicSpoilerUpdate\index.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PacktPub", "PacktPub", "{67CB5898-F84D-4D95-892E-F8FD35FB0496}"
+	ProjectSection(SolutionItems) = preProject
+		PacktPub\function.json = PacktPub\function.json
+		PacktPub\index.js = PacktPub\index.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99C270EC-F946-4BE9-9661-CF4D8EB4E3F7}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		host.json = host.json
+		package.json = package.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6E0FA5A-C602-4DE1-80FD-6B91AE8F58D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E0FA5A-C602-4DE1-80FD-6B91AE8F58D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E0FA5A-C602-4DE1-80FD-6B91AE8F58D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E0FA5A-C602-4DE1-80FD-6B91AE8F58D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33BC1717-7659-4D1F-905E-B3664FC6A80E}
+	EndGlobalSection
+EndGlobal

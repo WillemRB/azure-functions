@@ -1,5 +1,5 @@
 {
-  "name": "azure-functions-wrb",
+  "name": "azure-functions",
   "version": "1.0.0",
   "description": "Number of Azure Functions to perform recurring tasks",
   "private": true,

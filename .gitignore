@@ -1,3 +1,11 @@
 .vscode/
+.vs/
+
 node_modules/
 dist/
+package-lock.json
+
+[Bb]in/
+[Oo]bj/
+Properties/
+*.user
